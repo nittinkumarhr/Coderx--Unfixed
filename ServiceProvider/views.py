@@ -1,5 +1,5 @@
-from django.shortcuts import render
-from django.shortcuts import render,redirect,HttpResponse
+from django.shortcuts import render # type: ignore
+from django.shortcuts import render,redirect,HttpResponse # type: ignore
 from django.views.generic import View
 # Create your views here.
 
