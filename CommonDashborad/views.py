@@ -5,12 +5,23 @@ from django.views.generic import View
 
 class common(View):
     
-    template_name=''
+    template_name='common/home.html'
 
     def get (self,request,*args, **kwargs):
  
      
-        return HttpResponse('GET')
+        return render(request,self.template_name)
+    
+    def post(self,request,*args, **kwargs):
+        pass
+class Userlogin(View):
+    
+    template_name='common/userlogin.html'
+
+    def get (self,request,*args, **kwargs):
+ 
+     
+        return render(request,self.template_name)
     
     def post(self,request,*args, **kwargs):
         pass
