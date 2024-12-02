@@ -40,7 +40,7 @@
     justify-content: center;
     gap: 12px;
     padding: 12px 36px;
-    border-radius: 16px;
+    /* border-radius: 16px; */
     overflow: hidden;
     transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
   }
@@ -181,13 +181,14 @@
     width: 100vw;
     background-size: cover;
     background-position: center;
+    border: none;
     background-repeat: no-repeat;
   }
   .fest{
     color: white;
     height: 300px;
     width: 90vw;
-    background-color:#0037FF;
+    background-color:#143dd1f1;
     margin: 50px;
     border: 3px solid rgb(70, 70, 70);
     border-radius: 10px;
@@ -203,8 +204,8 @@
     object-fit: contain;
     height:100%;
     width: 100%;
-    border: 1px solid black;
-    border-radius: 10px;
+    /* border: 1px solid black;
+    border-radius: 10px; */
     object-fit: cover;
   }
   .festcon{
@@ -296,12 +297,7 @@
   
 
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins" , sans-serif;
-  }
+
   footer{
     /* position: fixed; */
     background: #12192c;

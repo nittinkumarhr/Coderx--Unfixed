@@ -4,9 +4,7 @@ from django.views.generic import View
 # Create your views here.
 
 class service(View):
-    
     template_name=''
-
     def get (self,request,*args, **kwargs):
  
      

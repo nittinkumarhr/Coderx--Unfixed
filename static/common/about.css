@@ -1,0 +1,84 @@
+/* General Reset */
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:whitesmoke;
+    color: #fff;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.navbar img{
+    height: 50px;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+   
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links li a:hover,
+.navbar .nav-links li a.active {
+    color: #0037FF; /* Accent color */
+}
+
+/* About Section */
+.about-section {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.about-section .container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-section h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #0037FF;
+}
+
+.about-section p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+.about-section h2 {
+    margin-top: 30px;
+    font-size: 2em;
+    color: #0037FF;
+}
+
+.about-section ul {
+    list-style: disc;
+    margin: 20px 0 0 20px;
+    text-align: left;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #0037FF;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

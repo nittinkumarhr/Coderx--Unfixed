@@ -1,0 +1,34 @@
+
+
+{% extends 'common/base.html' %}
+{% block body %}
+ <!-- Contact Section -->
+ <div id="main">
+    <div id="left"><img src="/media/image/common/repair.jpeg" alt=""></div>
+    <div id="right">
+        {% csrf_token %} 
+        <form class="form" method="get" action="{% url 'home' %}">
+            <div class="title">Create Your Account,<br><span>Sign up to get started</span></div>
+            <input class="input" name="first_name" placeholder="First Name" type="text" required>
+            <input class="input" name="last_name" placeholder="Last Name" type="text" required>
+            <input class="input" name="email" placeholder="Email" type="email" required>
+            <input class="input" name="password" placeholder="Password" type="password" required>
+            <input class="input" name="confirm_password" placeholder="Confirm Password" type="password" required>
+            <div class="login-with">
+                <div class="button-log" title="Register with Twitter"><b>t</b></div>
+                <div class="button-log" title="Register with Google">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 56.6934 56.6934">
+                        <path d="..."></path>
+                    </svg>
+                </div>
+                <div class="button-log" title="Register with Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 56.693 56.693">
+                        <path d="..."></path>
+                    </svg>
+                </div>
+            </div>
+            <button class="button-confirm">Sign Up →</button>
+        </form>
+    </div>
+</div>
+    {% endblock %}

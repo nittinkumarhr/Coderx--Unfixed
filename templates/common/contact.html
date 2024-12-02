@@ -1,0 +1,47 @@
+
+
+{% extends 'common/base.html' %}
+{% block body %}
+ <!-- Contact Section -->
+ <section class="contact-section">
+    <div class="contact-header">
+        <h1>Contact Us</h1>
+        <p>We’d love to hear from you! Fill out the form below, or reach us through the provided contact details.</p>
+    </div>
+
+    <div class="contact-container">
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p><strong>Phone:</strong> 000-800-919-1694</p>
+            <p><strong>Email:</strong> support@repaircrew.com</p>
+            <p><strong>Address:</strong> 123 Repair Lane, City Name, Country</p>
+            <h3>Follow Us:</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" title="Facebook"><img src="assets/facebooklogo.png" alt="Facebook"></a>
+                <a href="https://x.com/?lang=en" title="Twitter"><img src="assets/X logo.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com/" title="Instagram"><img src="assets/instagramlogo.jpeg" alt="Instagram"></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    {% endblock %}

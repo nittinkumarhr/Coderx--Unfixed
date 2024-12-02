@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
     <link rel="stylesheet" href="{% static 'common/home.css' %}" />
+    <link rel="stylesheet" href="{% static 'common/about.css' %}">
+    <link rel="stylesheet" href="{% static 'common/contact.css' %}">
+    <link rel="stylesheet" href="{% static 'common/userlogin.css' %}">
+    <link rel="stylesheet" href="{% static 'common/crewlogin.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
   </head>
   <body>
     <div class="nav">
       <div class="logo"><img src="/media/image/common/BLUE FRAME.png" alt="" /></div>
-      <div class="Home"><a href="link">Home</a></div>
-      <div class="About Us"><a href="link">About Us</a></div>
-      <div class="Contact Us"><a href="link">Contact Us</a></div>
+      <div class="Home"><a href="{% url 'home' %}">Home</a></div>
+      <div class="About Us"><a href="{% url 'about' %}">About Us</a></div>
+      <div class="Contact Us"><a href="{% url 'contact' %}">Contact Us</a></div>
       <div class="Login"><a href="link"><div class="menu">
         <div class="item">
           <a href="#" class="link">
@@ -29,12 +33,12 @@
           </a>
           <div class="submenu">
             <div class="submenu-item">
-              <a href="" class="submenu-link"> Crew</a>
+              <a href="{% url 'crewlogin' %}" class="submenu-link"> Crew</a>
             </div>
             <div class="submenu-item">
-              <a href="{% url 'Userlogin' %}"" class="submenu-link"> User</a>
+              <a href="{% url 'userlogin' %}" class="submenu-link"> User</a>
             </div>
-          </div>
+          </div>  
         </div>
       </div></div>
     </div>

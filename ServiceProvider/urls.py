@@ -3,5 +3,5 @@ from  ServiceProvider import views
 
 urlpatterns = [
     #SECTION - ===========================create account and login =========================================
-    path('service/',views.service.as_view(),name='home'),
+    # path('service/',views.service.as_view(),name='home'),
 ]
