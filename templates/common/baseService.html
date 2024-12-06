@@ -1,0 +1,101 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="{% static 'common/baseservice.css' %}" />
+    <link rel="stylesheet" href="{% static 'common/about.css' %}">
+    <link rel="stylesheet" href="{% static 'common/contact.css' %}">
+    <link rel="stylesheet" href="{% static 'common/userlogin.css' %}">
+    <link rel="stylesheet" href="{% static 'common/crewlogin.css' %}">
+    <link rel="stylesheet" href="{% static 'common/serv.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="logo"><img src="/media/image/common/BLUE FRAME.png" alt="" /></div>
+      <div class="Home"><a href="{% url 'home' %}">Home</a></div>
+      <div class="About Us"><a href="{% url 'about' %}">Dashboard</a></div>
+      <div class="Contact Us"><a href="{% url 'contact' %}">B3</a></div>
+      <div class="Login"><a href="link"><div class="menu">
+        <div class="item">
+          <a href="#" class="link">
+            <div id="profile"></div>
+            <svg viewBox="0 0 360 360" xml:space="preserve">
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  id="XMLID_225_"
+                  d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"
+                ></path>
+              </g>
+            </svg>
+          </a>
+          <div class="submenu">
+            <div class="submenu-item">
+              <a href="{% url 'crewlogin' %}" class="submenu-link"> Profile</a>
+            </div>
+            <div class="submenu-item">
+              <a href="{% url 'userlogin' %}" class="submenu-link"> Forget Password</a>
+            </div>
+            <div class="submenu-item">
+                <a href="{% url 'userlogin' %}" class="submenu-link">Log Out</a>
+              </div>
+          </div>  
+        </div>
+      </div></div>
+    </div>
+    {% block body %}
+    <!-- Main content fooy -->
+    {% endblock %}
+    <footer>
+      <div class="content">
+          <div class="top">
+              <div class="logo-details">
+                  <span class="logo_name">Repair Crew</span>
+              </div>
+              <div class="media-icons">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                  <a href="#"><i class="fa fa-youtube"></i></a>
+              </div>
+          </div>
+          <div class="link-boxes">
+              <ul class="box">
+                  <li class="link_name">Links</li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Get Started</a></li>
+              </ul>
+              <ul class="box">
+                  <li class="link_name">Services</li>
+                  <li><a href="#">Repair Services</a></li>
+                  <li><a href="#">Installation Service</a></li>
+                  <li><a href="#">Cleaning Services</a></li>
+                  <li><a href="#">Festival Decoration</a></li>
+              </ul>
+    
+              <ul class="box">
+                  <li class="link_name">Contact</li>
+                  <li><a href="#">+91 88xxxxxxxx</a></li>
+                  <li><a href="#">+91 8xxxxxxxxx</a></li>
+                  <li><a href="#">example@gmail.com</a></li>
+              </ul>
+          </div>
+      </div>
+          <div class="bottom-details">
+        <div class="bottom_text">
+          <span class="copyright_text">Copyright © 2024 <a href="#">repaircrew</a></span>
+          <span class="policy_terms">
+            <a href="#">Privacy policy</a>
+            <div class="credit">Made with <span style="color:tomato">❤</span> by <a href="https://www.learningrobo.com/">Repair Crew</a></div>
+          </span>
+        </div>
+      </div>
+  </footer>
+  </body>
+</html>

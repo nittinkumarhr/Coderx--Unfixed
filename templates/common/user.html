@@ -1,34 +1,5 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
-  <link rel="stylesheet" href="{% static 'common/userdash.css' %}">
-  </head>
-  <body>
-    <div class="nav">
-      <div class="logo"><img src="/media/image/common/BLUE FRAME.png" alt="Logo"></div>
-      <ul class="nav-links">
-        <li><a href="1Home html.html" class="active">Home</a></li>
-        <li><a href="5about.html">About Us</a></li>
-        <li><a href="6contactus.html">Contact Us</a></li>
-        <li><a href="3user.html">Login</a></li>
-      </ul>
-    </div>
-    
-    <div class="main">
-      <div class="box"></div>
-      <div class="home1">
-        <div class="name">The Repair Crew</div>
-        <div class="tagline">Expert Care for Every Corner of Your Home</div>
-        <div class="twobtn">
-          <button id="btn"><a href="3user.html">User login</a></button>
-          <button id="btn"><a href="">Crew Login</a></button>
-        </div>
-      </div>
-    </div>
+{% extends 'common/baseuser.html' %}
+{% block body %}
     <div class="border1"></div>
     <div class="head1">Home services at your doorstep.</div>
 
@@ -129,33 +100,4 @@
       </div>
     </div>
     <div class="border1"></div>
-    <div class="call">Questions? Call 000-800-919-1694</div>
-<footer>
-    <div class="footercon">
-        <a href="faq">FAQ</a>
-        <a href="faq">Investor Relation</a>
-        <a href="faq">Privacy</a>
-        
-    </div>
-    <div class="footercon">
-        <a href="faq">Help Center</a>
-        <a href="faq">Jobs</a>
-        <a href="faq">Cookie Preferences</a>
-        
-    </div>
-    <div class="footercon">
-        <a href="faq"> Account</a>
-        <a href="faq">Corporate Information</a>
-        <a href="faq">Legal Notices</a>
-    </div>
-    <div class="footercon">
-        <!-- <a href="faq">Media Centre</a> -->
-        <a href="faq"> Terms of Use</a>
-        <a href="faq">Corporate Information</a>
-        <a href="faq">Contact Us</a>
-    </div>
-</footer>
-<div class="last">The Repair Crew</div>
-
-  </body>
-</html>
+  {% endblock %}

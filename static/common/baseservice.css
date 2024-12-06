@@ -2,10 +2,13 @@
     margin: 0;
     overflow: none;
     padding: 0;
+
   }
   body{
     background-color:whitesmoke;
+    overflow: none;
   }
+  
   .nav {
     display: flex;
     justify-content: space-around;
@@ -57,6 +60,23 @@
     transition: transform 0.48s cubic-bezier(0.23, 1, 0.32, 1);
   }
   
+.item #profile{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: #000000;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid #e40578;    
+    border-radius: 50%;
+    background-image: url('/media/image/common/user.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
   .menu .link svg {
     width: 14px;
     height: 14px;
@@ -66,7 +86,7 @@
   
   .menu .item {
     position: relative;
-  }
+  } 
   
   .menu .item .submenu {
     display: flex;
@@ -118,8 +138,8 @@
   }
   
   .submenu .submenu-link {
-    display: block;
-    padding: 12px 14px;
+    display: block; 
+    gap: 30px;
     width: 90%;
     position: relative;
     text-align: center;
@@ -150,9 +170,9 @@
   }
   
   .submenu .submenu-link:hover {
-    background-color: rgba(255, 255, 255, 0.757);
+    background-color: rgba(255, 255, 255, 0.818);
     color: rgb(16, 71, 199);
-    font-weight: 1000px;
+    font-weight: bold;
   }
   
   .nav a{
@@ -176,7 +196,7 @@
   .main {
     background-image: url("/media/image/common/home2.jpg");
     height: 500px;
-    width: 100vw;
+    width: 90vw;
     background-size: cover;
     background-position: center;
     border: none;
@@ -214,7 +234,7 @@
     padding-top:80px;
     padding-left: 50px;
   }
-  .ftag{
+  .flag{
     padding-left: 50px;
     font-size: 20px;
   }
@@ -297,7 +317,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
   footer{
-    /* position: fixed; */
+    position: fixed;
     background: #12192c;
     width: 100%;
     bottom: 0;

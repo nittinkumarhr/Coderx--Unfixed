@@ -1,30 +1,5 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Services - The Repair Crew</title>
-    <link rel="stylesheet" href="{% static 'common/serv.css' %}">
-  </head>
-  <body>
-    <!-- Navbar -->
-    <div class="nav">
-      <div class="logo"><img src="/media/image/common/BLUE FRAME.png" alt="" /></div>
-      <div class="nav-links">
-        <a href="1Home html.html">Home</a>
-        <a href="5about.html">About Us</a>
-        <a href="6contactus.html">Contact Us</a>
-        <a href="2Crew login html.html">Login</a>
-      </div>
-    </div>
-
-    <!-- Main Content -->
-    <div class="main">
-      <div class="services-header">
-        <h1>Our Services</h1>
-        <p>Providing Expert Services for Every Corner of Your Home</p>
-      </div>
+{% extends 'common/baseService.html' %}
+{% block body %}
 
       <!-- Services Section -->
       <div class="services">
@@ -70,31 +45,4 @@
         </div>
       </div>
     </div>
-
-    <!-- Footer -->
-    <footer>
-      <div class="footercon">
-        <a href="faq">FAQ</a>
-        <a href="faq">Investor Relation</a>
-        <a href="faq">Privacy</a>
-      </div>
-      <div class="footercon">
-        <a href="faq">Help Center</a>
-        <a href="faq">Jobs</a>
-        <a href="faq">Cookie Preferences</a>
-      </div>
-      <div class="footercon">
-        <a href="faq">Account</a>
-        <a href="faq">Corporate Information</a>
-        <a href="faq">Legal Notices</a>
-      </div>
-      <div class="footercon">
-        <a href="faq">Terms of Use</a>
-        <a href="faq">Corporate Information</a>
-        <a href="faq">Contact Us</a>
-      </div>
-    </footer>
-
-    <div class="last">The Repair Crew</div>
-  </body>
-</html>
+    {% endblock %}

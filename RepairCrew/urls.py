@@ -24,8 +24,6 @@ from CommonDashborad import urls # type: ignore
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('CommonDashborad.urls')),
-    path('', include('ServiceProvider.urls')),
-    path('', include('Customer.urls')),
 ]
 if settings.DEBUG:  # Serve media files only in debug mode
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

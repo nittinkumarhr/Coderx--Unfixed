@@ -4,23 +4,14 @@
     <div id="main">
         <div id="left"><img src="/media/image/common/repair.jpeg" alt=""></div>
         <div id="right">
-            
             <form class="form" method="get" action="{% url 'user'%}">
                 <div class="title">Welcome Repair Crew,<br><span>Sign up to continue</span></div>
                 <input class="input" name="email" placeholder="Email" type="email" required>
                 <input class="input" name="password" placeholder="Password" type="password" required>
                 <div class="login-with">
-                    <div class="button-log" title="Login with Twitter"><b><a href="{% url 'createuser' %}"">C</a></b></div>
-                    <div class="button-log" title="Login with Google">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 56.6934 56.6934">
-                            <path d="..."></path>
-                        </svg>
-                    </div>
-                    <div class="button-log" title="Login with Facebook">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 56.693 56.693">
-                            <path d="..."></path>
-                        </svg>
-                    </div>
+                    <div class="button-log" title="Create Crew Account"><b><a href="{% url 'createuser' %}"">C</a></b></div>
+                    <div class="button-log" title="Forget Password"><b><a href="{% url 'createuser' %}"">F</a></b></div>
+                    <div class="button-log" title="Continue With Google"><b><a href="">G</a></b></div>
                 </div>
                 <button class="button-confirm">Let's go →</button>
             </form>
